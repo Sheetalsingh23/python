@@ -1,1 +1,1 @@
-# python
+SPPU SDL LAB PROGRAMS(PYTHON AND R).
