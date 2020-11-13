@@ -1,0 +1,56 @@
+#Roll no: TECOA166 
+#Name: SHEETAL SINGH 
+#Batch: A4
+
+#Problem 1:Write a R program to find factorial of input number.
+#Solution:
+num = as.integer(readline(prompt="Enter a number: "))
+factorial = 1
+if(num < 0) {
+print("Number is negative! ")
+} 
+else if(num == 0) {
+print("The factorial of 0 is 1")
+} else {
+for(i in 1:num) {
+factorial = factorial * i
+}
+print(paste("The factorial of", num ,"is",factorial))
+}
+#____________________________________________
+
+#Problem 2: Write a R program to extract every nth element of a given vector.
+#Solution:
+v <- 1:100
+print("Original vector:")
+print(v)
+print("After extracting every 5th element of the vector:")
+n <- v[seq(1, length(v), 5)]
+print(n)
+#____________________________________________
+
+#Problem 3: Write a R program to find all elements of a given list that are not in another given list.
+#Solution1:
+l1 = list("Sheetal", "Sangeeta", "Sachin")
+l2 = list("Piya", "Syam", "Ram", "Sheetal", "Sangeeta", "Sachin")
+print("Original lists:")
+print(l1)
+print(l2)
+print("All elements of l2 that are not in l1:")
+setdiff(l2, l1)
+#____________________________________________
+
+#Problem 4: Write a R program to extract first two rows from a given data frame.
+#Solution:
+exam_data = data.frame(
+name = c('Sheetal', 'Sangeeta', 'Sachin', 'Gita', 'Sita'),
+score = c(12.5, 9, 16.5, 12, 9),
+attempts = c(1, 3, 2, 3, 2),
+qualify = c('yes', 'no', 'yes', 'no', 'no')
+)
+print("Original dataframe:")
+print(exam_data)
+print("Extract first two rows:")
+result =  exam_data[1:2,]
+print(result)
+#____________________________________________
