@@ -1,5 +1,3 @@
-# TECOA166, Sheetal Singh
-
 import pandas as pd
 df = pd.read_csv('month_temperature.csv')
 for i in df.columns:
