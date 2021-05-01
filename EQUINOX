@@ -1,0 +1,16 @@
+for _ in range(int(input())):
+    n,a,b = map(int,input().split())
+    l = list("EQUINOX")
+    s1,a1 = 0,0
+    for _ in range(n):
+        s = input().upper()
+        if s[0] in l:
+            s1 +=a
+        else:
+            a1 +=b
+    if s1>a1:
+        print("SARTHAK")
+    elif a1>s1:
+        print("ANURADHA")
+    else:
+        print("DRAW")
