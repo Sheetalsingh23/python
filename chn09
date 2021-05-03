@@ -1,0 +1,8 @@
+for _ in range(int(input())):
+    s = input()
+    if(s.count("a")==s.count("b")):
+        print(s.count("a"))
+    elif(s.count("a")>s.count("b")):
+        print(s.count("b"))
+    else:
+        print(s.count("a")
