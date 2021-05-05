@@ -1,0 +1,14 @@
+for _ in range(int(input())):
+    n,k = map(int,input().split())
+    a = list(map(str,input().split()))
+    #print(a)
+    c=""
+    for _ in range(k):
+        s = list(map(str,input().split()))
+        #print(s)
+    for i in range(n):
+        if a[i] in s:
+            c+="YES "
+        else:
+            c+="NO "
+    print(c)
