@@ -1,0 +1,13 @@
+from math import gcd
+try:
+    def lcm(number1,number2,g):
+        l = (number1*number2)//g
+        return l
+    t = int(input())
+    for _ in range(t):
+        n1,n2=map(int,input().split())
+        g = gcd(n1,n2)
+        l = lcm(n1,n2,g)
+        print(g ,l)
+except:
+    pass
