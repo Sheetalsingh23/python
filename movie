@@ -1,0 +1,14 @@
+# cook your dish here
+for _ in range(int(input())):
+    n= int(input())
+    l=list(map(int, input().split()))
+    r=list(map(int, input().split()))
+    a=[l[i]*r[i] for i in range(n)]
+    m=[]
+    for i in range(n):
+        if a[i]==max(a):
+            m.append(r[i])
+    for j in range(n):
+        if r[j]==max(m):
+            print(j+1)
+            break
