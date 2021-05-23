@@ -1,0 +1,14 @@
+
+# cook your dish here
+from math import ceil
+t=int(input())
+while t:
+    n,b,m=[int(x) for x in input().split()]
+    c=d=0
+    while n:
+        a=ceil(n/2)
+        c=c+(a*m*(2**d)+b)
+        d=d+1
+        n=n-a
+    print(c-b)
+    t=t-1
