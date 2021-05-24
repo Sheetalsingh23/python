@@ -1,0 +1,12 @@
+# cook your dish here
+for _ in range(int(input())):
+    n,b=map(int,input().split())
+    l=[]
+    for i in range(n):
+        h,br,p=map(int,input().split())
+        if p<=b:
+            l.append(h*br)
+    if len(l)==0:
+        print("no tablet")
+    else:
+        print(max(l))
