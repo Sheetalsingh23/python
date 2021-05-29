@@ -1,0 +1,20 @@
+
+def solve(s1,s2):
+    c = 0
+    for each in s1:
+        if each in s2:
+            c += 1
+    if(c>=2):
+        return "similar"
+    else:
+        return "dissimilar"
+
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        s1 = input().split()
+        s2 = input().split()
+        
+        
+        res = solve(s1,s2)
+        
+        print(res)
