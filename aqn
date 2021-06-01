@@ -1,0 +1,14 @@
+for _ in range(int(input())):
+    n,k=map(int,input().split())
+    c=0
+    for i in range(n):
+        a,b=map(int,input().split())
+        if a<=k:
+            k=k-a
+        else:
+            c=c+abs(a-k)*b
+            if k-a<=0:
+                k=0
+            else:
+                k=k-a
+    print(c)
