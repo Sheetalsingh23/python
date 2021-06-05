@@ -1,0 +1,9 @@
+n=int(input())
+d=list(map(int,input().split()))
+d.sort()
+m=max(d)
+mm=1
+for k in d:
+	if d.count(k)>1 or m%k:
+		mm=k
+print(m,mm)
