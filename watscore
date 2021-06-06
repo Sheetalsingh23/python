@@ -1,0 +1,10 @@
+for _ in range(int(input())):
+    n = int(input())
+    a = [0,0,0,0,0,0,0,0,0,0,0]
+    for i in range(n):
+        p,s = map(int,input().split())
+        if(p<=8):
+            if a[p-1]<s:
+                a[p-1]=s
+        #print(a)
+    print(sum(a))
