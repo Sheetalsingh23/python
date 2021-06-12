@@ -1,0 +1,7 @@
+for _ in range(int(input())) :
+    s=input()
+    c=s.count('1')
+    if c>(len(s)-c) :
+        print("WIN")
+    else :
+        print("LOSE")
