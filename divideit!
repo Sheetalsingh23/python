@@ -1,0 +1,22 @@
+rep = int(input())
+for _ in range(rep):
+    n = int(input())
+
+    c = 0
+    b = 0
+    z = 0
+
+    while n%5 == 0:
+        c+=1
+        n//=5
+    while n%3 == 0:
+        b+=1
+        n//=3
+    while n%2 == 0:
+        z+=1
+        n//=2
+    if n == 1:
+        a = z + b + (2*c)
+        print(a+b+c)
+    else:
+        print(-1)
