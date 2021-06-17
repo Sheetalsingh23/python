@@ -1,0 +1,9 @@
+for _ in range(int(input())):
+	n=int(input())
+	l=list(int(c) for c in input().split())
+	p=i=0
+	while i<n:
+		if abs(l[i]-l[i-1])>1:
+			p+=1
+		i+=1
+	print('YES' if p<2 else 'NO')circle 
