@@ -1,0 +1,14 @@
+for _ in range(int(input())):
+    n = int(input())
+    a = list((map(int,input().split())))[:n]
+    #print(a)
+    a1 = []
+    b1 = []
+    for i in a:
+        if i<0:
+            a1.append(i)
+        else:
+            b1.append(i)
+    #print(a1)
+    #print(b1)
+    print(sum(set(b1)), sum(set(a1)))
