@@ -1,0 +1,15 @@
+for _ in range(int(input())):
+    n,p = map(int,input().split())
+    a = list(map(int,input().split()))[:n]
+    cp = p//2
+    hp = p//10
+    c,h =0,0
+    for i in range(len(a)):
+        if a[i]>= cp:
+            c+=1
+        elif a[i]<=hp:
+            h+=1
+    if c==1 and h==2:
+        print("yes")
+    else:
+        print("no")
