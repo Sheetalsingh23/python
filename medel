@@ -1,0 +1,10 @@
+# cook your dish here
+for _ in range(int(input())):
+    n = int(input())
+    a = list(map(int, input().split()))
+    m = max(a)
+    n = min(a)
+    if a.index(m)>a.index(n):
+        print(n,m)
+    else:
+        print(m,n)
