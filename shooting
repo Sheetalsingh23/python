@@ -1,0 +1,16 @@
+n=int(input())
+a=list(map(int,input().split()))
+b=[]
+for i in range(n):
+      b.append([a[i],i+1])
+b=sorted(b)
+b=b[::-1]
+s=0
+c=0
+for i in range(n):
+      s=s+(b[i][0]*c+1)
+      c=c+1
+print(s)
+for i in range(n):
+      print(b[i][1],end=" ")
+print()
