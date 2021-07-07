@@ -1,0 +1,14 @@
+for i in range(int(input())):
+    n=int(input())
+    a=list(map(int,input().split()))
+    b=sum(a)
+    if(a.count(5)!=0):
+        if(a.count(2)==0):
+            if(b/n>=4):
+                print("Yes")
+            else:
+                print("No")
+        else:
+            print("No")
+    else:
+        print("No")
