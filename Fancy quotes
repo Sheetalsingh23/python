@@ -1,0 +1,6 @@
+for _ in range(int(input())):
+    s = list(map(int,input().split()))
+    if "not" in s:
+       print("Real quote")
+    else:
+       print("Regular quote")
